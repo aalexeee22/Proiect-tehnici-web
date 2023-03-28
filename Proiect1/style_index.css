@@ -1,0 +1,22 @@
+img{
+    width:50em;
+    height: 100%;
+}
+header,footer,main,section{
+    max-width: 50em;
+    margin: auto;
+   
+}  
+ol a{
+    text-decoration: none;
+    color:aliceblue;
+} 
+ol li{
+    font-size: 2em;
+}
+section{
+    margin-top:2em;
+}
+section h3{
+    font-size: 2em;
+}
