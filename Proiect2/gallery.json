@@ -1,0 +1,19 @@
+{
+  "gallery": [
+    {
+      "id": 1,
+      "title": "Lucrare 1",
+      "image": "imagini/lucrare1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Lucrare 2",
+      "image": "imagini/lucrare2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Lucrare 3",
+      "image": "imagini/lucrare3.jpg"
+    }
+  ]
+}

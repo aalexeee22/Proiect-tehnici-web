@@ -1,0 +1,189 @@
+<!--<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta  charset="utf-8">
+    <title>RRS-galerie</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="style_galerie.css" rel="stylesheet">
+    <script defer src="javascript.js"></script>
+</head>
+<body>
+    <h1>Red Reef Solutions</h1>
+    <nav class="meniu">
+        <ul id="lista-meniu-principal">
+            <li><button class="buton-meniu-principal"><a href="index.html">RRS</a></button></li>
+            <li><button class="buton-meniu-principal"><a href="calculLucrare.html">Prețuri</a></button></li>
+            <li><button class="buton-meniu-principal"><a href="galerie.html">Galerie</a></button></li>
+            <li><button class="buton-meniu-principal"><a href="contact.html">Contact</a></button></li>
+            <li><button class="buton-meniu-principal"><a href="cont.html">Cont</a></button></li></li>
+        </ul>
+    </nav>
+    <header>
+
+    </header>
+    <main>
+        <div><img src="imagini/draxlmaier.jpeg"></div>
+        <div><img src="imagini/muncitori.jpeg"></div>
+        <div><img src="imagini/muncitori2.jpeg"></div>
+        <div><img src="imagini/schaeff_hr_16.jpeg"></div>
+        <div><img src="imagini/utilaje.jpeg"></div>
+
+    </main>
+
+</body>
+</html>
+-->
+
+
+
+<!--
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dog List</title>
+</head>
+<body>
+  <h1>Dog List</h1>
+  <div id="dogGallery"></div>
+
+  <h2>CRUD Menu</h2>
+  <button onclick="createDog()">Create</button>
+  <button onclick="readDogs()">Read</button>
+  <button onclick="updateDog()">Update</button>
+  <button onclick="deleteDog()">Delete</button>
+
+  <script>
+    // Fetch the dog data from the server
+    function readDogs() {
+      fetch("http://localhost:3000/dogs")
+        .then(response => response.json())
+        .then(dogs => {
+          // Update the dog gallery on the page
+          const dogGalleryElement = document.getElementById("dogGallery");
+          dogGalleryElement.innerHTML = "";
+          if (dogs.length > 0) {
+            dogs.forEach(dog => {
+              const image = document.createElement("img");
+              image.src = dog.img;
+              image.alt = dog.name;
+              dogGalleryElement.appendChild(image);
+            });
+          } else {
+            const message = document.createElement("p");
+            message.textContent = "No dogs found!";
+            dogGalleryElement.appendChild(message);
+          }
+        })
+        .catch(error => {
+          console.error("Error fetching dog data:", error);
+        });
+    }
+
+    function createDog() {
+      const name = prompt("Enter the dog's name:");
+      const img = prompt("Enter the URL of the dog's photo:");
+
+      if (name && img) {
+        fetch("http://localhost:3000/dogs", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ name, img })
+        })
+          .then(response => response.json())
+          .then(newDog => {
+            console.log("Created dog:", newDog);
+            readDogs();
+          })
+          .catch(error => {
+            console.error("Error creating dog:", error);
+          });
+      }
+    }
+
+    function updateDog() {
+      const id = prompt("Enter the ID of the dog to update:");
+      const name = prompt("Enter the updated name for the dog:");
+      const img = prompt("Enter the updated URL for the dog's photo:");
+
+      if (id && (name || img)) {
+        fetch(`http://localhost:3000/dogs/${id}`, {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ name, img })
+        })
+          .then(response => response.json())
+          .then(updatedDog => {
+            console.log("Updated dog:", updatedDog);
+            readDogs();
+          })
+          .catch(error => {
+            console.error("Error updating dog:", error);
+          });
+      }
+    }
+
+    function deleteDog() {
+      const id = prompt("Enter the ID of the dog to delete:");
+
+      if (id) {
+        fetch(`http://localhost:3000/dogs/${id}`, {
+          method: "DELETE"
+        })
+          .then(response => response.text())
+          .then(message => {
+            console.log("Delete response:", message);
+            readDogs();
+          })
+          .catch(error => {
+            console.error("Error deleting dog:", error);
+          });
+      }
+    }
+  </script>
+</body>
+</html>
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta  charset="utf-8">
+    <title>RRS-galerie</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="style_galerie.css" rel="stylesheet">
+    <script src="scriptGalerie.js"></script>
+  <title>RRS-galerie</title>
+</head>
+<body>
+    <h1>Red Reef Solutions</h1>
+    <nav class="meniu">
+        <ul id="lista-meniu-principal">
+            <li><button class="buton-meniu-principal"><a href="index.html">RRS</a></button></li>
+            <li><button class="buton-meniu-principal"><a href="calculLucrare.html">Prețuri</a></button></li>
+            <li><button class="buton-meniu-principal"><a href="galerie.html">Galerie</a></button></li>
+            <li><button class="buton-meniu-principal"><a href="contact.html">Contact</a></button></li>
+            <li><button class="buton-meniu-principal"><a href="cont.html">Cont</a></button></li></li>
+        </ul>
+    </nav>
+    <header>
+
+    </header>
+  <div id="constructionGallery"></div>
+
+  <h2>CRUD Menu</h2>
+  <button onclick="createProject()">Create</button>
+  <button onclick="readProjects()">Read</button>
+  <button onclick="updateProject()">Update</button>
+  <button onclick="deleteProject()">Delete</button>
+
+  <div id="projectGallery"></div> 
+  
+</body>
+</html>
+

@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding-left: 0.3em;
+    padding-top: 0;
+    padding-top: 0;
+    padding-right: 0;
+    
+} 
+body{
+    background-image: linear-gradient(rgb(224, 230, 255),rgba(69, 65, 65, 0.7)),url(imagini/utilaje2.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    color:aliceblue;      
+}
+h1{
+    color:black;
+    display:flex;
+    justify-content: center;
+}
+ul{
+    list-style: none;
+}
+#lista-meniu-principal a{
+    text-decoration:none;
+    color:black;
+    border:0 ;
+    
+    width:100%;
+    justify-content: center;
+}
+.buton-meniu-principal{
+    border:none;
+    background-color:aliceblue;
+    padding:1em;
+    font-size:100%;
+    width:100%;
+}
+#lista-meniu-secundar button{
+    background-color: lavender;
+}
+#lista-meniu-secundar{
+    display: none;
+    position: absolute;
+    background-color: lavender;
+}
+nav ul li:hover #lista-meniu-secundar {display: block;}
+p{
+    font-size:large;
+}
+
+@media screen and (max-width: 768px) {
+    nav{
+        display:flex;
+        justify-content: center;  
+    }
+    #lista-meniu-principal{
+        display:flex;
+        flex-direction:column; 
+    }
+    #lista-meniu-principal a{
+        padding:0 10em;
+    }
+
+}
+@media screen and (min-width:990px)
+{
+    nav{
+        height:7em;
+        width:100%;
+        display:flex;
+        justify-content: center;
+        margin-bottom: 2em;
+    }
+    #lista-meniu-principal{
+        list-style: none;
+        padding-left:0;
+        display:flex;
+        flex-direction:row;
+        
+    }
+    #lista-meniu-principal a{
+        padding:0 5em;
+    }
+    
+}
+@media screen and(max-width:768px)
+{
+    nav{
+        height:7em;
+        width:100%;
+        display:flex;
+        justify-content: center;
+        margin-bottom: 6em;
+        
+    }
+    #lista-meniu-principal{
+        list-style: none;
+        padding-left:0;
+        display:flex;
+        flex-direction:column; 
+    }
+    #lista-meniu-principal a{
+        padding:0 10em;
+    }
+    
+}
+@media screen and (max-width:990px) and (min-width:768px)
+{
+    nav{
+        height:7em;
+        width:100%;
+        display:flex;
+        justify-content: center;
+        margin-bottom: 6em;
+    }
+    #lista-meniu-principal{
+        list-style: none;
+        padding-left:0;
+        display:flex;
+        flex-direction:column;
+        
+    }
+    #lista-meniu-principal a{
+        padding:0 10em;
+    }
+    
+}   

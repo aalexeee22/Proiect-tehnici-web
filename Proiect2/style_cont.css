@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  form {
+    width: 300px;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .buton-submit {
+    background-color: aliceblue;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .buton-submit:hover {
+    background-color: aliceblue;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 16px;
+  }
+  

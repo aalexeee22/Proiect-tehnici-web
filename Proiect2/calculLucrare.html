@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta  charset="utf-8">
+    <title>RRS-preț</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="style_calculPret.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Red Reef Solutions</h1>
+    <nav class="meniu">
+        <ul id="lista-meniu-principal">
+            <li><button class="buton-meniu-principal"><a href="index.html">RRS</a></button></li>
+            <li><button class="buton-meniu-principal"><a href="calculLucrare.html">Prețuri</a></button></li>
+            <li><button class="buton-meniu-principal"><a href="galerie.html">Galerie</a></button></li>
+            <li><button class="buton-meniu-principal"><a href="contact.html">Contact</a></button></li>
+            <li><button class="buton-meniu-principal"><a href="cont.html">Cont</a></button></li></li>
+        </ul>
+    </nav>
+    <header>
+
+    </header>
+    <main>
+        <div id="informatii">
+            <h3>Listă de prețuri(pe oră)</h3>
+            <p>Compactare: 100 lei</p>
+            <p>Excavare: 200 lei</p>
+            <p>Management: 200 lei</p>
+            <p>Rezervare utilaj: 500 lei</p>
+        </div>
+        <div>
+        <label>
+        Preț pe oră:
+        <input type="number" id="pret_pe_ora-input" size="2" />
+        </label>
+        <label>
+        Număr de ore:
+        <input type="number" id="nr_ore-input" size="2" />
+        </label>
+        <button id="pret-button">Calculează</button>
+        <br /><br />
+        <div id="solution"></div>
+        </div>
+        <script src="scriptPret.js"></script>
+    </main>
+</body>
+</html>

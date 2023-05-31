@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta  charset="utf-8">
+    <title>RRS-contact</title>
+    <link href="style.css" rel="stylesheet">
+    
+</head>
+<body>
+    <h1>Red Reef Solutions</h1>
+    <nav class="meniu">
+        <ul id="lista-meniu-principal">
+            <li><button class="buton-meniu-principal"><a href="index.html">RRS</a></button></li>
+            <li><button class="buton-meniu-principal"><a href="calculLucrare.html">Prețuri</a></button></li>
+            <li><button class="buton-meniu-principal"><a href="galerie.html">Galerie</a></button></li>
+            <li><button class="buton-meniu-principal"><a href="contact.html">Contact</a></button></li>
+            <li><button class="buton-meniu-principal"><a href="cont.html">Cont</a></button></li></li>
+        </ul>
+    </nav>
+    <header>
+        <h3>Pentru mai multe detalii nu ezitați să ne contactați la:</h3>
+    </header>
+    <main>    
+    <script src="scriptContact.js"></script>
+
+    <form id="myform" method="post" action="http://localhost:3000/formular">
+        <label for="nu">Nume</label>
+        <input id="nu" type="text" name="nume"><br><br>
+
+        <label for="nt">Număr de telefon</label>
+        <input id="nt" type="text" name="adresa"><br><br>
+       
+        <label for="adrm">Adresă de mail</label>
+        <input id="adrm" type="text" name="adresa"><br><br>
+
+        <label for="adr">Adresa</label>
+        <input id="adr" type="text" name="adresa"><br><br>
+       
+        
+        <button type="submit" onclick="addLucrare()">Comandă</button>
+       </form>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "name": "aaaaaaaaaaaaaaaaaa",
+            "img": "https://raw.githubusercontent.com/aalexeee22/Proiect-tehnici-web/main/imagini/utilaje2.jpeg"
+        },
+        {
+            "id": 2,
+            "name": "Project 2",
+            "img": "https://raw.githubusercontent.com/aalexeee22/Proiect-tehnici-web/main/imagini/muncitori.jpeg"
+        },
+        {
+            "id": 3,
+            "name": "Project 3",
+            "img": "https://raw.githubusercontent.com/aalexeee22/Proiect-tehnici-web/main/imagini/schaeff_hr_16.jpeg"
+        },
+        {
+            "name": "mmmmmmmmmmmmmmmmm",
+            "img": "https://raw.githubusercontent.com/aalexeee22/Proiect-tehnici-web/main/imagini/utilaje2.jpeg",
+            "id": "5"
+        }
+    ]
+}
